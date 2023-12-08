@@ -1,0 +1,230 @@
+/* Basic styles for event cards
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+.main-title {
+  text-align: center;
+  padding: 50px 0;
+  background: linear-gradient(to right, #ffcc66, #ff6666);
+  /* margin-bottom: 30px; */
+  /* border: 5px solid #e68a00;
+}
+
+.main-title h1 {
+  font-size: 54px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 20px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  perspective: 1000px;
+  overflow: hidden;
+}
+
+.event-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s, box-shadow 0.5s;
+  background-color: #fff;
+}
+
+.event-card:hover {
+  transform: scale(1.05) rotateY(5deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+  height: 100%;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: transform 0.5s;
+}
+
+.show-more {
+  width: 100%;
+  padding: 15px 0;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  bottom: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.show-more:hover {
+  background-color: #3367d6;
+}
+
+.marriage .card-image {
+  background-image: url('wedding.avif');
+}
+
+.birthday .card-image {
+  background-image: url('birthday2.jpg');
+}
+
+.housewarming .card-image {
+  background-image: url('house_warming_ceremony.webp');
+}
+
+.thread-ceremony .card-image {
+  background-image: url('Thread_ceremony.jpg');
+}
+
+
+/* .marriage .card-image::before,
+.birthday .card-image::before,
+.housewarming .card-image::before,
+.thread-ceremony .card-image::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  right: -50px;
+  bottom: -50px;
+  background-image: url('parallax_bg.avif');
+  background-size: cover;
+  z-index: -1;
+  transition: transform 0.5s;
+} */
+
+/* .event-card:hover .card-image::before {
+  transform: scale(1.1);
+} */
+/* Updated styles for the entire page */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.main-title {
+  text-align: center;
+  padding: 50px 0;
+  background: linear-gradient(to right, #ffcc66, #ff6666);
+  margin-bottom: 30px;
+  border-bottom: 5px solid #e68a00;
+}
+
+.main-title h1 {
+  font-size: 54px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0;
+  padding: 20px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  perspective: 1000px;
+  overflow: hidden;
+}
+.event-card {
+  position: relative;
+  width: 300px;
+  height: 500px; /* Increased height for the event card */
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.card-image {
+  flex: 1; /* Takes available space */
+  background-color: #ddd; /* Placeholder background color */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-size: cover; /* Ensures the background image covers the entire space */
+  background-position: center; /* Centers the background image */
+}
+.card-details {
+  padding: 20px;
+  text-align: center;
+}
+.event-card:hover {
+  transform: scale(1.03) rotateY(3deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+.card-details h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+.card-details p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+.marriage .card-image {
+  background-image: url('wedding.avif');
+}
+.birthday .card-image {
+  background-image: url('birthday2.jpg');
+}
+.housewarming .card-image {
+  background-image: url('house_warming_ceremony.webp');
+}
+
+.thread-ceremony .card-image {
+  background-image: url('Thread_ceremony.jpg');
+}
+.show-more {
+  width: 100%;
+  padding: 15px 0;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  bottom: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+.event-card:hover .card-image::before {
+  transform: scale(1.1);
+}
+.show-more:hover {
+  background-color: #3367d6;
+}
+
